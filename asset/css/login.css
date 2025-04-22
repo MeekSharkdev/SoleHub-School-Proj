@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Unbounded:wght@200..900&display=swap');
+
+:root {
+    --color-primary: #364b6e;
+    --color-white: #f5f7fa;
+    --color-accent: #1a212f;
+    --color-default: #7693ba;
+    --bg-color: #cfd8e8;
+    --hover-color: #415d88;
+    --active-color: #364b6e;
+    --font-color-text: #565360;
+    --font-color-label: #908E9b;
+    --font-family-header: 'Unbounded', sans-serif;
+    --font-family-text: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--color-white);
+    font-family: var(--font-family-text);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    width: 330px;
+    margin: 0 auto;
+    padding: 35px;
+    background-color: var(--bg-color);
+    border-radius: 13px;
+    box-shadow: 23px 23px 46px #c3cbda,
+                -23px -23px 46px #dbe5f6;
+    margin-top: 10px;
+}
+
+h1 {
+    text-align: left;
+    color: var(--color-primary);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: var(--font-color-label);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.input-container i {
+    position: absolute;
+    left: 10px;
+    color: var(--color-primary);
+}
+
+.input-container input {
+    width: calc(100% - 30px); 
+    padding: 10px;
+    padding-left: 30px;
+    border: 1px solid var(--color-default);
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: var(--color-primary);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--hover-color);
+}
+
+.register-container {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.register-container a {
+    color: var(--color-primary);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.register-container a:hover {
+    color: var(--hover-color);
+}

@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Unbounded:wght@200..900&display=swap');
+
+:root {
+    --color-primary: #364b6e;
+    --color-white: #f5f7fa;
+    --color-accent: #1a212f;
+    --color-default: #7693ba;
+    --bg-color: #cfd8e8;
+    --hover-color: #415d88;
+    --active-color: #364b6e;
+    --font-color-text: #565360;
+    --font-color-label: #908E9b;
+    --font-family-header: 'unbounded', sans-serif;
+    --font-family-text: 'poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-primary);
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-white);
+    height: 100%;
+}
+
+.container {
+    padding: 50px;
+    width: 115%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-family: var(--font-family-header);
+}
+
+.alert {
+    margin-bottom: 20px;
+}
+
+#table {
+    margin-top: 20px; 
+    clear: both;
+    box-shadow: 23px 23px 46px #c3cbda, -23px -23px 46px #dbe5f6;
+    background-color: var(--bg-color);
+    color: var(--color-primary); 
+    border-radius: 5px; 
+    overflow: hidden;
+    margin-bottom: 175px;
+    width: 115%; 
+    margin-left: -4rem;
+}
+
+#table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#table th,
+#table td {
+    padding: 10px;
+    border-bottom: 1px solid var(--color-default);
+    background-color: var(--bg-color);
+}
+
+#table tr {
+    border-bottom: 1px solid var(--color-default);
+}
+
+#table th {
+    background-color: var(--color-primary); 
+    color: var(--color-white); 
+}
+
+.btn-primary,
+.btn-danger {
+    padding: 5px 10px; 
+    font-size: 12px;
+    transition: opacity 0.3s; 
+}
+
+.btn-primary {
+    background-color: #364b6e;
+    border-color: #364b6e;
+}
+
+.btn-danger {
+    background-color: #dc3545; 
+    border-color: #dc3545;
+}
+
+.btn-primary:hover,
+.btn-danger:hover {
+    opacity: 0.8; 
+}
+
+thead th {
+    background-color: var(--color-accent); 
+    color: var(--color-white); 
+}

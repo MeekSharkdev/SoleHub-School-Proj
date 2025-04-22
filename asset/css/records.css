@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Unbounded:wght@200..900&display=swap');
+
+/* Base css */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-primary: #364b6e;
+    --color-white: #f5f7fa;
+    --color-accent: #1a212f;
+    --color-default: #7693ba;
+    --bg-color: #cfd8e8;
+    --hover-color: #415d88;
+    --active-color: #364b6e;
+    --font-color-text: #565360;
+    --font-color-label: #908E9b;
+    --font-family-header: 'unbounded', sans-serif;
+    --font-family-text: 'poppins', sans-serif;
+    --font-size-base: 18px;
+    --font-size-large: 20px;
+    --spacing-medium: 10px;
+    --border-radius: 300px;
+    --transition-fast: 0.2s ease-in-out;
+}
+
+.records-container {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 100px;
+    border-radius: 13px;
+    box-shadow: 23px 23px 46px #c3cbda, -23px -23px 46px #dbe5f6;
+    margin-left: 40px;
+    padding: 30px;
+    margin-bottom: 100px;
+}
+
+.search-container {
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--font-color-text);
+}
+
+.search-container input[type="text"],
+.search-container button {
+    padding: 5px; 
+    font-size: 16px;
+
+}
+
+#records {
+    width: 100%;
+    margin-top: 20px; 
+    border-collapse: collapse;
+    background-color: var(--bg-color);
+    color: var(--color-accent);
+}
+
+#records thead th {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 14px;
+    text-align: left;
+}
+
+#records tbody tr {
+    border-bottom: 1px solid var(--bg-color);
+}
+
+/* Apply alternating row colors */
+#records tbody tr:nth-child(odd) {
+    background-color: var(--color-white);
+}
+
+#records tbody tr:nth-child(even) {
+    background-color: var(--bg-color);
+}
+
+#records tbody tr:hover {
+    background-color: #c3cbda;
+    color: var(--color-accent);
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    transition: background-color var(--transition-fast);
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background-color: var(--hover-color);
+}

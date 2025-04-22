@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Unbounded:wght@200..900&display=swap');
+
+:root {
+    --color-primary: #364b6e;
+    --color-white: #f5f7fa;
+    --color-accent: #1a212f;
+    --color-default: #7693ba;
+    --bg-color: #cfd8e8;
+    --hover-color: #415d88;
+    --active-color: #364b6e;
+    --font-color-text: #565360;
+    --font-color-label: #908E9b;
+    --font-family-header: 'Unbounded', sans-serif;
+    --font-family-text: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--color-white);
+    font-family: var(--font-family-text);
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 50px;
+    font-family: var(--font-family-text);
+    width: 800px;
+    margin-left: 250px;
+}
+
+.form-content {
+    flex: 1.5;
+    padding: 35px;
+    background-color: var(--bg-color);
+    border-radius: 13px;
+    box-shadow: 23px 23px 46px #c3cbda, -23px -23px 46px #dbe5f6;
+    margin-right: 100px;
+}
+
+h1 {
+    color: var(--color-primary);
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+p {
+    color: var(--color-white);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.label-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.label-container label {
+    color: var(--color-primary);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="number"],
+select {
+    width: 90%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid var(--color-default);
+    border-radius: 4px;
+    color: var(--font-color-text);
+    transition: border-color 0.3s ease;
+    font-style: italic;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+select:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+button {
+    width: 50%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: var(--color-primary);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-left: 10rem;
+}
+
+button:hover {
+    background-color: var(--hover-color);
+}
+
+a {
+    color: var(--color-primary);
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--color-accent);
+}
+
+.login-link p {
+    text-align: center;
+}

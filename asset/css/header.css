@@ -1,0 +1,186 @@
+:root {
+    --color-primary: #364b6e;
+    --color-white: #f5f7fa;
+    --color-accent: #1a212f;
+    --color-default: #7693ba;
+    --text-nav: #1a212f;
+    --bg-color: #cfd8e8;
+    --hover-color: #415d88;
+    --active-color: #364b6e;
+    --logout-color: #dc3545;
+    --font-color-text: #565360;
+    --font-color-label: #908E9b;
+    --font-family-header: 'unbounded', sans-serif;
+    --font-family-text: 'poppins', sans-serif;
+    --font-size-base: 18px;
+    --font-size-large: 20px;
+    --spacing-medium: 10px;
+    --border-radius: 300px;
+    --transition-fast: 0.2s ease-in-out;
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    background-color: var(--color-primary);
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+#topBtn:hover {
+    background-color: #c49960;
+}
+
+/* Header CSS Start and Glassmorphism Navbar */
+.header-area {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.2);
+    border: 0px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-area .logo {
+    display: inline-block;
+}
+
+.header-area .logo h3 {
+    color: var(--text-nav);
+    font-size: 20px;
+    margin: 0;
+    font-family: var(--font-family-header);
+}
+
+.header-area .logo a {
+    text-decoration: none;
+    font-family: var(--font-family-header);
+    color: inherit;
+    transition: color 1s ease-in-out;
+}
+
+.header-area .logo h3:hover {
+    color: var(--active-color);
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+}
+
+.header-top ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header-top ul li {
+    margin-right: 20px;
+    position: relative;
+    margin-right: 40px;
+}
+
+.header-top ul li a {
+    color: var(--text-nav);
+    font-size: 16px;
+    font-weight: 300;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.header-top ul li a:hover {
+    color: var(--active-color);
+    transform: scale(1.1);
+}
+
+/* Specific Hover Style for Log Out */
+.header-top ul li a.logout:hover {
+    background-color: var(--logout-color);
+    color: var(--color-white);
+    transform: scale(1.1);
+    border-radius: 25px;
+}
+
+.dropdown-pages {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logout{
+    font-size: 10px; 
+    display: inline-block;
+    text-decoration: none;
+    color: var(--text-nav);
+    padding: 4px;
+    transition: background-color 0.1s ease-in-out, transform 0.3s ease-in-out;
+    outline: 1px solid var(--active-color); 
+    border-radius: 25px;
+}
+
+.logout i {
+    margin-right: 5px;
+}   
+
+.logout:hover {
+    color: var(--color-white);
+    transform: scale(0.95); 
+    border-color: var(--active-color);
+}
+
+.dropdown-pages ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.dropdown-pages ul li {
+    width: 110px;
+    padding: 0;
+    margin-right: 0;
+}
+
+.dropdown-pages ul li a {
+    color: var(--text-nav);
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.2s ease-in-out, color 0.3s ease-in-out;
+}
+
+.dropdown-pages ul li:hover {
+    background-color: var(--hover-color);
+}
+
+.dropdown-pages ul li:hover a {
+    color: var(--color-white);
+}
+
+.header-top ul li:hover .dropdown-pages {
+    display: block;
+}
